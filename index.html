@@ -3,39 +3,65 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!-- displays site properly based on user's device -->
-
 		<link
 			rel="icon"
 			type="image/png"
 			sizes="32x32"
-			href="./images/favicon-32x32.png"
-		/>
-
+			href="./images/favicon-32x32.png" />
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Outfit:wght@300;400;500&display=swap"
+			rel="stylesheet" />
 		<title>Frontend Mentor | NFT preview card component</title>
-
-		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-		<style>
-			.attribution {
-				font-size: 12px;
-				text-align: center;
-			}
-			.attribution a {
-				color: hsl(228, 45%, 44%);
-			}
-		</style>
 	</head>
 	<body>
-		Equilibrium #3429 Our Equilibrium collection promotes balance and calm.
-		0.041 ETH 3 days left Creation of Jules Wyvern
-
-		<div class="attribution">
+		<main class="main-flexContainer">
+			<article class="card">
+				<div class="card__image spacing-remPlusHalf"></div>
+				<a class="card__title-link" href="#"
+					><h1 class="card__title spacing-rem">
+						Equilibrium #3429
+					</h1></a
+				>
+				<p class="card__description spacing-remPlusHalf">
+					Our Equilibrium collection promotes balance and calm.
+				</p>
+				<div class="card__contentFlexContainer spacing-remPlusHalf">
+					<div class="card__eth-statusFlexContainer">
+						<span class="card__eth-logo"
+							><img src="./images/icon-ethereum.svg" alt=""
+						/></span>
+						<span class="card__eth-value">0.041 ETH </span>
+					</div>
+					<div class="card__days-leftFlexContainer">
+						<span class="card__day-left-logo"
+							><img src="./images/icon-clock.svg" alt=""
+						/></span>
+						<span class="card__days-info"
+							><span class="card__day">3</span> days left</span
+						>
+					</div>
+				</div>
+				<hr class="separator spacing-rem" />
+				<div class="card__authorFlexContainer">
+					<img
+						class="card__author-image"
+						src="./images/image-avatar.png"
+						alt="" />
+					<span class="card__author-creationof"> Creation of </span>
+					<a class="card__author-name"> Jules Wyvern </a>
+				</div>
+			</article>
+		</main>
+		<footer class="attribution">
 			Challenge by
 			<a
 				href="https://www.frontendmentor.io?ref=challenge"
 				target="_blank"
 				>Frontend Mentor</a
-			>. Coded by <a href="#">Your Name Here</a>.
-		</div>
+			>. Coded by <span class="name">Jameel Melson</span>.
+		</footer>
 	</body>
 </html>
