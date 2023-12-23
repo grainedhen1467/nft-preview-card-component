@@ -28,4 +28,4 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 
 ## Author
 
--   Frontend Mentor - [@grainedhen1467](https://github.com/grainedhen1467/nft-preview-card-component)
+-   Frontend Mentor - [@grainedhen1467](https://www.frontendmentor.io/profile/grainedhen1467)
